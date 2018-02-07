@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".MyWechat").click(function(){
+
+                $(".tcbg2").show()
+                $(".fraud-tips-dialog").show()
+            })
+//            var test=$(".tcbg2");
+            $(".tcbg2").click(function(){
+                //弹出框弹出后，点击空白背景时消失
+                if($(".tcbg2").css("display")=='block')
+//                if(test.style.display=='block')
+//                无法使用js语句代替jquery
+                {
+                    $(".tcbg2").hide();
+                    $(".fraud-tips-dialog").hide()
+                }
+            })
+        })
+    </script>
+    <title>Yym-韩国代购</title>
+</head>
+<body>
+<div class="top">
+    <h1>Yym-韩国代购</h1>
+</div>
+<div class="cb"></div>
+<div class="wrap">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swp2"><img src="images/15.jpg" alt=""></div>
+            <div class="swiper-slide swp3"><img src="images/13.png" alt=""></div>
+            <div class="swiper-slide swp4"><img src="images/12.png" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--<ul class="news">-->
+        <!--<li class="li2"><img src="images/2.2.png" alt=""><p>初雨</p><span>2018.1.24</span></li>-->
+        <!--<li class="li4"><img src="images/2.4.png" alt=""><p>距离</p><span>2018.1.24</span></li>-->
+        <!--<li class="li5"><img src="images/2.5.png" alt=""><p>雨后</p><span>2018.1.24</span></li>-->
+        <!--<li class="li3"><img src="images/2.3.png" alt=""><p>雷鸣</p><span>2018.1.24</span></li>-->
+        <!--<li class="li7"><img src="images/2.7.png" alt=""><p>下厨</p><span>2018.1.24</span></li>-->
+        <!--<li class="li1"><img src="images/2.1.png" alt=""><p>放晴</p><span>2018.1.24</span></li>-->
+        <!--<li class="li6"><img src="images/2.6.png" alt=""><p>大雪</p><span>2018.1.24</span></li>-->
+    <!--</ul>-->
+    <div class="info">
+        <h2>Yym代购说明</h2>
+        <p>本页面仅供展示部分商品 详情请加我微信关注朋友圈</p>
+        <p>可代购奢侈品(包 鞋子 手表 衣服 饰品) 化妆品 以及保健品</p>
+    </div>
+    <div class="img">
+        <p><img src="images/li2.jpg" alt=""></p>
+        <p><img src="images/li3.jpg" alt=""></p>
+        <p><img src="images/li4.jpg" alt=""></p>
+        <p><img src="images/li5.jpg" alt=""></p>
+    </div>
+</div>
+<div class="cb24"></div>
+<div class="footer">
+    <ul>
+        <li class="MyWechat"><a href="javascript:">了解详情</a></li>
+        <li class="MyWechat"><a href="javascript:">我的微信</a></li>
+        <li><a href="http://www.miyacbg.com">返回首页</a></li>
+    </ul>
+</div>
+<div class="tcbg2"></div>
+
+
+
+<!--弹出层的固定背景，用fix来固定底层页面-->
+<div class="fraud-tips-dialog">
+    <div class="fraud-hd">
+        <p>更多精彩</p>
+        <p>↓请加微信↓</p>
+    </div>
+    <div class="fraud-con">
+        <div class="wx_code">
+            <img src="images/erweima.jpg" >
+        </div>
+        <div class="wx_code_info">
+	    <span>
+		<img src="images/icon_wx.png" alt="" class="vam"/>
+		<span id="copy_wx_con" value="https://github.com/zenorocha/clipboard.js.git">Yym-Aimee</span>
+
+	    </span>
+            <div class="btn_wrap">
+                <button id="copy_wx" class="jue_btn jue_btn_primary" data-clipboard-target="#copy_wx_con">复制</button>
+            </div>
+        </div>
+        <div class="tip_info">
+            专注香港&韩国代购<br><span>chanel ysl cl hermes</span>
+        </div>
+    </div>
+</div>
+<script>
+    //新建一个Clipboard对象，然后在html中实现它（按钮和文本的标签中添加value和data-clipboard-target）
+    new Clipboard('#copy_wx');
+</script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        //设置滑动方向，水平(horizontal)或垂直(vertical)。
+        loop: true,
+//        设置切换效果为“滑动”
+        effect: 'fade',
+        mousewheel: false,
+        //是否只是鼠标滚轮滑动
+        autoplay: {
+            delay: 5000,
+            stopOnLastSlide: false,
+            disableOnInteraction: false,
+            //用户操作后是否停止自动滑动。
+        },
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets:false,
+            //当前点放大
+            clickable:true,
+            //点击分页器能控制切换
+        },
+
+
+        // 如果需要前进后退按钮
+//        nextButton: '.swiper-button-next',
+//        prevButton: '.swiper-button-prev',
+
+        // 如果需要滚动条
+//        scrollbar: '.swiper-scrollbar',
+    })
+</script>
+</body>
+</html>
