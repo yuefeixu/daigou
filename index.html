@@ -9,11 +9,12 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script>
         $(document).ready(function(){
-            $(".MyWechat").click(function(){
+            $(".MyWechat,.swp3").click(function(){
 
                 $(".tcbg2").show()
                 $(".fraud-tips-dialog").show()
-            })
+                return false;
+            });
 //            var test=$(".tcbg2");
             $(".tcbg2").click(function(){
                 //弹出框弹出后，点击空白背景时消失
@@ -37,8 +38,8 @@
 <div class="wrap">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swp2"><img src="images/15.jpg" alt=""></div>
-            <div class="swiper-slide swp3"><img src="images/13.png" alt=""></div>
+            <div class="swiper-slide swp2"><img src="images/13.png" alt=""></div>
+            <div class="swiper-slide swp3"><img src="images/15.jpg" alt=""></div>
             <div class="swiper-slide swp4"><img src="images/12.png" alt=""></div>
         </div>
         <!-- 如果需要分页器 -->
@@ -63,6 +64,11 @@
         <p><img src="images/li3.jpg" alt=""></p>
         <p><img src="images/li4.jpg" alt=""></p>
         <p><img src="images/li5.jpg" alt=""></p>
+        <p><img src="images/li6.jpg" alt=""></p>
+        <p><img src="images/li7.jpg" alt=""></p>
+        <p><img src="images/li8.jpg" alt=""></p>
+        <p><img src="images/li9.jpg" alt=""></p>
+        <p><img src="images/li10.jpg" alt=""></p>
     </div>
 </div>
 <div class="cb24"></div>
